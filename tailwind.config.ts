@@ -1,8 +1,8 @@
-import type { Config } from "tailwindcss";
+import { Config } from "tailwindcss";
 
 const colors = require("tailwindcss/colors");
 
-const config: Config = {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,6 +15,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        'mx': '850px',
+        '3xl': '1800px'
+      }
+    },
+    fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
     },
     colors: {
       ...colors,
@@ -24,6 +31,6 @@ const config: Config = {
       fourth: colors.black,
     }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;

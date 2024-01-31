@@ -21,11 +21,11 @@ const navLinks = [
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95'>
-      <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-3 md:px-6 md:py-5'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-80 px-4 lg:px-15 border-b border-[#33353F]'>
+      <div className='flex flex-wrap container items-center justify-between mx-auto px-2 py-2 sm:px-3 sm:py-3 md:px-4 md:py-4 lg:px-5 lg:py-5'>
         <Link
           href='/'
-          className='text-white text-2xl sm:text-3xl md:text-5xl font-semibold'
+          className='text-white text-3xl sm:text-4xl md:text-5xl font-semibold'
         >
           LOGO
         </Link>
