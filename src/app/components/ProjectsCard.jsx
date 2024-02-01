@@ -14,7 +14,7 @@ const ProjectsCard = ({ imgUrl, title, description, previewUrl }) => {
             href={previewUrl}
             className="h-14 w-14 relative border-2 border-[#ADB7BE] rounded-xl hover:border-white group/link"
           >
-            <ArrowTopRightOnSquareIcon className="text-[#ADB7BE] group-hover/link:text-white h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer" />
+            <ArrowTopRightOnSquareIcon className="text-[#ADB7BE] group-hover/link:text-white h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-colors" />
           </Link>
         </div>
       </div>
