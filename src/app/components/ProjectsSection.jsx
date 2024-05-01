@@ -1,8 +1,7 @@
 'use client'
 import React, { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
-
 import ProjectsCard from './ProjectsCard'
+import { motion, useInView } from 'framer-motion'
 
 const projectsList = [
   {
@@ -10,16 +9,14 @@ const projectsList = [
     title: 'React Portfolio',
     description: 'My Personal Website',
     image: '/images/random.jpg',
-    preview: '/',
-    git: 'https://github.com/BaoTran685/portfolio'
+    preview: '/'
   },
   {
     id: 2,
     title: 'Password Encrypter',
     description: 'Encryption/Decryption for Text',
     image: '/images/projects/passwordE.png',
-    preview: 'https://passwordencrypter.com/',
-    git: '/https://github.com/BaoTran685/password-encrypter'
+    preview: 'https://passwordencrypter.com/'
   }
 ]
 const ProjectsSession = () => {
@@ -31,8 +28,8 @@ const ProjectsSession = () => {
     animate: { y: 50, opacity: 1 }
   }
   return (
-    <section className='py-6 sm:py-4 lg:py-6 sm:my-8 lg:my-20'>
-      <h2 className='text--header text-center my-7' id='project'>
+    <section>
+      <h2 className='text-white font-extrabold text-center text-4xl lg:text-5xl my-7 md:my-10'>
         My Projects
       </h2>
       <ul ref={ref} className='grid md:grid-cols-2 gap-8 md:gap-12'>
@@ -50,7 +47,6 @@ const ProjectsSession = () => {
               title={project.title}
               description={project.description}
               previewUrl={project.preview}
-              gitUrl={project.git}
             />
           </motion.li>
         ))}
