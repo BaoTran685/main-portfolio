@@ -25,11 +25,11 @@ const EmailSection = () => {
     }
   }
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative' id='contact'>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
       {/* <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div> */}
       <div className='z-10 flex flex-col items-center md:items-start'>
         <h2 className='text-xl font-bold text-white my-2'>Let's Connect</h2>
-        <p className='text-[var(--grey-color)] text-base md:text-sm xl:text-lg text-center md:text-left mb-4 max-w-md'>
+        <p className='text-[#ADB7BE] text-base md:text-sm xl:text-lg text-center md:text-left mb-4 max-w-md'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -51,7 +51,7 @@ const EmailSection = () => {
               name='email'
               id='email'
               type='email'
-              className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 appearance-none'
+              className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
               required
               placeholder='baotran05@gmail.com'
             />
@@ -92,14 +92,14 @@ const EmailSection = () => {
           </div>
           <button
             type='submit'
-            className='text-white rounded-lg w-full button--background--dark'
+            className='text-white font-medium rounded-lg w-full bg-gradient-to-br from-primary-700 to-secondary-400 '
           >
-            <span className='rounded-lg div--hover--button'>
+            <span className='block rounded-lg hover:bg-gradient-to-br hover:from-third-600 py-2.5 px-5'>
               Send Message
             </span>
           </button>
           {(emailSubmitted) && (
-            <p className='text-[var(--header--green-color)] text-sm mt-2'>
+            <p className='text-green-500 text-sm mt-2'>
               Email sent successfully!
             </p>
           )}
