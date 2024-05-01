@@ -1,33 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background--dark-color: #050505;
+  --background--green-color: #efe6bd;
+  --background--first-white: #F5F7F8;
+  --background--second-white: #cbd5e1;
+  --background--grey-color: #181818;
+
+  --grey-color-1: #45474B;
+  --grey-color-2: #636b70;
+  --slate-color: #cbd5e1;
+  --dark--grey-color: #33353F;
+
+  --pink: #db2777;
+
+  --light-color: #faf9f9;
+  --nav--dark-color: #1c1c1c;
+  --nav--white-color: white;
+  --header--green-color: #495E57;
+  --header--yellow-color: #F4CE14;
+  --header--purple-color: #c084fc;
+  --header--pink-color: #db2777;
+
+  --button--grey-color: #334155;
+  --button--green-color: #495E57;
+  --button--yellow-color: #F4CE14;
+  --button--purple-color: #a855f7;
+  --button--pink-color: #ec4899;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .text--main--header {
+    @apply text-5xl lg:text-6xl 3xl:text-7xl font-extrabold;
   }
+  .text--header {
+    @apply text-[#45474B] text-4xl lg:text-5xl font-extrabold;
+  }
+  
+  .header--background--dark {
+    @apply bg-gradient-to-br from-[#8A2387] via-[#E94057] to-[#F27121];
+  }
+  .header--background--light {
+    @apply bg-gradient-to-br from-[var(--header--green-color)] to-[var(--header--yellow-color)];
+  }
+
+  
+  .text--nav--header {
+    @apply text-base sm:text-lg lg:text-xl 3xl:text-2xl text-[var(--grey-color-1)] hover--text--transition--color;
+  }
+  .icon--nav--button {
+    @apply flex items-center px-3 py-2 text-[var(--grey-color-1)] hover--text--transition--color;
+  }
+  .nav--background--dark {
+    @apply bg-[var(--nav--dark-color)] bg-opacity-10;
+  }
+  .nav--background--light {
+    @apply bg-[var(--nav--white-color)] bg-opacity-80;
+  }
+
+  .text--number {
+    @apply text-white text-3xl sm:text-4xl lg:text-5xl 3xl:text-6xl;
+  }
+  .text--content {
+    @apply text-base sm:text-lg lg:text-xl 3xl:text-2xl;
+  }
+  .text--sub--header {
+    @apply text-lg sm:text-xl lg:text-2xl xl:text-2xl 3xl:text-3xl;
+  }
+  .div--center {
+    @apply top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .hover--text--transition--color {
+    @apply hover:text-[#F27121] transition-colors duration-500;
+  }
+  
+  .button--background--dark {
+    background-color: #F27121;
+  }
+  .button--background--light {
+    @apply bg-gradient-to-br from-[var(--button--purple-color)] to-[var(--button--pink-color)]
+  }
+  .div--hover--button {
+    @apply block rounded-full hover:bg-gradient-to-br  px-6 py-3;
+  }
+
+  .box--shadow {
+    box-shadow: 0 0 1.85rem #737373;
+  }
+  .text--moving {
+    @apply text-transparent bg-clip-text inline-block transition-all duration-700 ease-in-out;
+    background-image: linear-gradient(
+      to left,
+    #636b70 50%,
+    #E94057 50%,
+    #E94057
+    );
+    background-size: 200% 100%;
+    background-position: 100%;
+  }
+
+  .text--moving:hover {
+    background-position: 0;
+  }
+
+  
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
   }
 }

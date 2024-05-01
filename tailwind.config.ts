@@ -31,6 +31,6 @@ const config = {
       fourth: colors.black,
     }
   },
-  plugins: []
+  plugins: ['prettier-plugin-tailwindcss']
 };
 export default config;
