@@ -10,8 +10,8 @@ const ProjectsCard = ({ imgUrl, title, description, previewUrl, gitUrl }) => {
   return (
     <Link href={previewUrl}>
       <div
-        className='h-52 md:h-72 rounded-t-xl relative group '
-        style={{ background: `url(${imgUrl})`, backgroundSize: 'cover' }}
+        className='h-52 md:h-72 rounded-t-xl relative group'
+        style={{ background: `url(${imgUrl})`, backgroundSize: 'cover'}}
       >
       </div>
       <div className='text-white rounded-b-xl bg-[#45474B] py-4 px-4'>

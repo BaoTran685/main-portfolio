@@ -4,7 +4,7 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 
-import Button from "./Button"
+import Button from "./ButtonSection"
 
 // breakpoints:
 // when screen >= md, animated text and picture are aligned horizontally

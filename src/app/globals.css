@@ -78,7 +78,9 @@
   .hover--text--transition--color {
     @apply hover:text-[#F27121] transition-colors duration-500;
   }
-  
+  .hover--scale--transition--button {
+    @apply hover:scale-110 transition-transform ease-in duration-300;
+  }
   .button--background--dark {
     background-color: #F27121;
   }

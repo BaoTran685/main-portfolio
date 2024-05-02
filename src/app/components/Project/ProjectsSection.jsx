@@ -3,13 +3,14 @@ import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 import ProjectsCard from './ProjectsCard'
+import SubHeader from '../SubHeader'
 
 const projectsList = [
   {
     id: 1,
     title: 'React Portfolio',
     description: 'My Personal Website',
-    image: '/images/random.jpg',
+    image: '/images/projects/Password_Encrypter_Home.jpg',
     preview: '/',
     git: 'https://github.com/BaoTran685/portfolio'
   },
@@ -30,11 +31,14 @@ const ProjectsSession = () => {
     initial: { y: 50, opacity: 0 },
     animate: { y: 50, opacity: 1 }
   }
+  // py-6 sm:py-4 lg:py-6 sm:my-8 lg:my-20
   return (
-    <section className='py-6 sm:py-4 lg:py-6 sm:my-8 lg:my-20'>
-      <h2 className='text--header text-center my-7' id='project'>
-        My Projects
-      </h2>
+    <section className='mt-10 xl:mt-12' id='project'>
+      <div className='flex flex-col'>
+      <div className='flex flex-col h-full items-center md:items-start text-center md:text-left w-full bg-[#e7e7e76b] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
+          <SubHeader> My Projects </SubHeader>
+        </div>
+      </div>
       <ul ref={ref} className='grid md:grid-cols-2 gap-8 md:gap-12'>
         {projectsList.map((project, index) => (
           <motion.li

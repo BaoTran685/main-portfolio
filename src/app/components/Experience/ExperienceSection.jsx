@@ -6,10 +6,6 @@ import SubHeader from '../SubHeader'
 import TabExperience from './TabExperience'
 import CircleSection from '../CircleSection'
 
-const barStyle = {
-  width: 'calc(100% + 2rem)'
-}
-
 const experienceComponents = [
   {
     title: 'Volunteerer',
@@ -32,11 +28,11 @@ const Experience = () => {
 
   return (
     <section className='mt-10 xl:mt-12' id='experience'>
-      <div className='flex flex-col mb-16'>
-        <div className='flex flex-col h-full items-center md:items-start text-center md:text-left w-full bg-[#e7e7e76b] rounded-xl shadow-lg mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
-          <SubHeader barStyle={barStyle}> Experience </SubHeader>
+      <div className='flex flex-col'>
+        <div className='flex flex-col h-full items-center md:items-start text-center md:text-left w-full bg-[#e7e7e76b] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
+          <SubHeader> Experience </SubHeader>
         </div>
-        <ul className='grid gap-6'>
+        <ul className='grid gap-5 md:gap-6'>
           {experienceComponents.map((component, index) => (
             <li
               key={index}

@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useLayoutEffect, useRef } from 'react'
+import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 
 const mdWidth = 768
 const SubHeader = ({ children }) => {
@@ -12,19 +12,26 @@ const SubHeader = ({ children }) => {
     if (targetRef.current) {
       const windowWidth = window.innerWidth
       if (windowWidth >= mdWidth) {
-        setDimension({ width: targetRef.current.offsetWidth + 20 })
+        setDimension({
+          width: targetRef.current.offsetWidth + (windowWidth * 1) / 50
+        })
       } else {
         setDimension({ width: targetRef.current.offsetWidth })
       }
     }
   }
+  const handleDelayChange = () => {
+    clearInterval(movementTimer)
+    movementTimer = setTimeout(handleDimensionChange, TIME)
+  }
   useLayoutEffect(() => {
     handleDimensionChange()
   }, [])
-  window.addEventListener('resize', () => {
-    clearInterval(movementTimer)
-    movementTimer = setTimeout(handleDimensionChange, TIME)
-  })
+  useEffect(() => {
+    window.addEventListener('resize', handleDelayChange)
+    return () => window.removeEventListener('resize', handleDelayChange)
+  }, [])
+
   return (
     <>
       <h2

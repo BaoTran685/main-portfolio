@@ -5,7 +5,7 @@
 
 @layer components {
   .fade {
-    animation: fading 1.3s forwards 1
+    animation: fading 2s forwards 1
   }
 
   @keyframes fading {

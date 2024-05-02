@@ -13,8 +13,8 @@ import TabContent from './TabContent'
 
 const aboutComponents = [
   {
-    tab: 'skills',
-    tabName: 'Skills',
+    tab: 'language',
+    tabName: 'Languages',
     list: [
       {
         title: 'NodeJS, NextJS, React, Tailwind Css',
@@ -58,45 +58,46 @@ const aboutComponents = [
         link: ''
       }
     ]
-  },
-  {
-    tab: 'certification',
-    tabName: 'Certification',
-    list: [
-      {
-        title: 'Euclid Contest Certificate of Distinction',
-        at: '',
-        link: ''
-      },
-      {
-        title:
-          'Canadian Computing Competition (Senior) Certificate of Distinction',
-        at: '',
-        link: ''
-      },
-      {
-        title: 'Fermat Contest Certificate of Distinction',
-        at: '',
-        link: ''
-      }
-    ]
   }
+
+  // {
+  //   tab: 'certification',
+  //   tabName: 'Certification',
+  //   list: [
+  //     {
+  //       title: 'Euclid Contest Certificate of Distinction',
+  //       at: '',
+  //       link: ''
+  //     },
+  //     {
+  //       title:
+  //         'Canadian Computing Competition (Senior) Certificate of Distinction',
+  //       at: '',
+  //       link: ''
+  //     },
+  //     {
+  //       title: 'Fermat Contest Certificate of Distinction',
+  //       at: '',
+  //       link: ''
+  //     }
+  //   ]
+  // }
 ]
 
 const AboutSection = () => {
-  const [curTab, setCurTab] = useState('skills')
+  const [curTab, setCurTab] = useState('language')
 
   const handleTabChange = newTab => {
     setCurTab(newTab)
   }
 
   return (
-    <section className='text-slate-600'>
-      <div className='flex flex-col space-y-6'>
+    <section className='' id='about'>
+      <div className='flex flex-col space-y-5 md:space-y-6'>
         <div className='flex justify-center w-full h-full bg-[#e7e7e76b] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
           <div className='flex flex-col h-full items-center md:items-start text-center md:text-left'>
             <SubHeader>Quoc Bao Tran </SubHeader>
-            <p className='text--content leading-relaxed mt-2 lg:mt-4'>
+            <p className='text-[var(--grey-color-1)] text--content leading-relaxed mt-2 lg:mt-4'>
               I am Bao and I am from Prince Edward Island, Canada. I am
               currently studying <span className='font-bold'>Mathematics</span>{' '}
               at the University of Waterloo, and I want to focus on{' '}
@@ -106,10 +107,10 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col md:grid md:grid-cols-2 gap-6'>
-          <div className='flex items-center justify-center w-full h-full bg-[#e7e7e76b] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
-            <div className='flex flex-col text-center'>
-              <div className='flex flex-row justify-center space-x-4'>
+        <div className='flex flex-col md:grid md:grid-cols-12 gap-5 md:gap-6'>
+          <div className='col-span-6 block w-full h-fit bg-[#e7e7e76b] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
+            <div className='flex flex-col items-center justify-center text-center'>
+              <div className='flex flex-row justify-center w-fit h-fit bg-[white] rounded-full'>
                 {aboutComponents.map((component, index) => (
                   <TabContent
                     key={index}
@@ -132,7 +133,7 @@ const AboutSection = () => {
                       content.title && (
                         <li
                           key={content_index}
-                          className='text--content leading-relaxed mb-2'
+                          className='text-[var(--grey-color-1)] text--content leading-relaxed mb-2'
                         >
                           {content.title}{' '}
                           {content.at && (
@@ -150,7 +151,7 @@ const AboutSection = () => {
               ))}
             </div>
           </div>
-          <div className='flex flex-col items-center justify-center w-full h-full bg-[#e7e7e76b] rounded-3xl shadow-xl p-4'>
+          <div className='col-span-6 flex flex-col items-center justify-center w-full h-full bg-[#e7e7e76b] rounded-3xl shadow-xl p-4'>
             <Image
               src='/images/new-signature.png'
               alt='signature'
