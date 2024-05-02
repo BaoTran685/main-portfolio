@@ -10,6 +10,7 @@ import Button from "./ButtonSection"
 // when screen >= md, animated text and picture are aligned horizontally
 // when screen < md, animated text and picture are aliend vertically
 const HeroSection = () => {
+  const helloWord = "Hello, I'm ";
   return (
     <section className='flex flex-col items-center justify-center mt-28 md:mt-32 lg:mt-40'>
       <div className='flex flex-col md:flex-row justify-around bg-[#e7e7e76b] shadow-xl rounded-3xl w-full p-10 lg:p-16 xl:p-20'>
@@ -18,7 +19,7 @@ const HeroSection = () => {
         >
           <h1 className='text-[var(--grey-color-1)] mb-4 lg:mb-8 text--main--header'>
             <div className='text-transparent bg-clip-text header--background--dark mb-1'>
-              Hello, I'm{' '}
+              Hello, I&apos;m{' '}
             </div>
             <TypeAnimation
               sequence={[
