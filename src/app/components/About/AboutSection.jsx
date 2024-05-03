@@ -136,7 +136,7 @@ const AboutSection = () => {
           <div className='col-span-6 block w-full h-fit bg-[var(--box-grey-color)] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
             <div
               ref={targetRef}
-              style={{minHeight: minHeight}}
+              style={{ minHeight: minHeight }}
               className='flex flex-col items-center justify-start text-center'
             >
               <div className='flex flex-row justify-center w-fit h-fit bg-[white] rounded-full'>
@@ -168,6 +168,8 @@ const AboutSection = () => {
                           {content.at && (
                             <Link
                               href={content.link}
+                              rel='noopener noreferrer'
+                              target='_blank'
                               className='text-[var(--blue-color)] hover:underline'
                             >
                               @{content.at}
@@ -197,4 +199,3 @@ const AboutSection = () => {
 }
 
 export default AboutSection
-
