@@ -38,7 +38,7 @@ const HeroSection = () => {
           <p className='text-[var(--grey-color)] text-base sm:text-lg lg:text-xl 3xl:text-2xl mb-8'>
             not how long, but how well you have lived is the main thing
           </p>
-          <div className='text-base sm:text-md lg:text-lg mt-6 md:mt-12'>
+          <div className='text-base sm:text-md lg:text-lg mt-3 sm:mt-6 md:mt-12'>
             <HeroButton content='Hire Me' />
             <HeroButton content='Download CV' />
           </div>
@@ -47,7 +47,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}
-          className='place-self-center mt-6 md:mt-0 md:ml-4'
+          className='place-self-center mt-3 sm:mt-6 md:mt-0 md:ml-4'
         >
           <div className='rounded-full w-[275px] h-[275px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] relative'>
             <Image
