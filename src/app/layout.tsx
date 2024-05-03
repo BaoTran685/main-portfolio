@@ -7,7 +7,7 @@ import "./components/About/about.css";
 const popings = Poppins({ weight: '400', subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bao Tran",
+  title: "Bao Tran's Portfolio",
   description: "My Portfolio",
 };
 

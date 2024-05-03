@@ -109,7 +109,7 @@ const AboutSection = () => {
   }
   useLayoutEffect(() => {
     handleDelayChange()
-  }, [])
+  })
   useEffect(() => {
     window.addEventListener('resize', handleDelayChange)
     return () => window.removeEventListener('resize', handleDelayChange)

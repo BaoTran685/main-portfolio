@@ -17,7 +17,7 @@ const config = {
       },
     },
     fontFamily: {
-      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'sans': ['Poppins', 'Arial', 'sans-serif'],
     },
     colors: {
       ...colors,

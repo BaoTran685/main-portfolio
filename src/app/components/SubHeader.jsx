@@ -30,7 +30,7 @@ const SubHeader = ({ children }) => {
   useEffect(() => {
     window.addEventListener('resize', handleDelayChange)
     return () => window.removeEventListener('resize', handleDelayChange)
-  }, [])
+  })
 
   return (
     <>

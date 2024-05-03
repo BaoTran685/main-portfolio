@@ -32,7 +32,7 @@ const EmailSection = () => {
     <section className='mt-10 xl:mt-12' id='contact'>
       <div className='h-full w-full bg-[#e7e7e76b] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
         <div className='flex flex-col items-center md:items-start text-center md:text-left'>
-          <SubHeader>Let&apos; Connect</SubHeader>
+          <SubHeader>Let&apos;s Connect</SubHeader>
         </div>
         <div className='mt-6 xl:mt-10'>
           <form className='flex flex-col' onSubmit={handleSubmit}>
