@@ -1,11 +1,11 @@
 'use client'
 import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import SubHeader from '../SubHeader'
 import CircleSection from '../CircleSection'
 import TabContent from './TabContent'
+import LinkWrapper from '../LinkWrapper'
 
 // breakpoints:
 // when screen >= md, the picture and about text are aligned horizontally
@@ -166,14 +166,12 @@ const AboutSection = () => {
                         >
                           {content.title}{' '}
                           {content.at && (
-                            <Link
-                              href={content.link}
-                              rel='noopener noreferrer'
-                              target='_blank'
+                            <LinkWrapper
+                              webUrl={content.link}
                               className='text-[var(--blue-color)] hover:underline'
                             >
                               @{content.at}
-                            </Link>
+                            </LinkWrapper>
                           )}
                         </li>
                       )

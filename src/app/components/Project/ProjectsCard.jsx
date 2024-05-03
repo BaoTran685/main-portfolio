@@ -3,7 +3,8 @@ import {
   CodeBracketIcon,
   ArrowTopRightOnSquareIcon
 } from '@heroicons/react/16/solid'
-import Link from 'next/link'
+
+import LinkWrapper from '../LinkWrapper'
 
 const ProjectsCard = ({ imgUrl, title, description, gitUrl, webUrl }) => {
   return (
@@ -14,22 +15,18 @@ const ProjectsCard = ({ imgUrl, title, description, gitUrl, webUrl }) => {
           style={{ background: `url(${imgUrl})`, backgroundSize: 'cover' }}
         >
           <div className='overlay items-center justify-center absolute top-0 left-0 w-full h-full slight--blue--background rounded-t-xl bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-90'>
-            <Link
-              href={gitUrl}
-              rel='noopener noreferrer'
-              target='_blank'
+            <LinkWrapper
+              webUrl={gitUrl}
               className='h-14 w-14 relative border-2 grey--border rounded-xl hover:border-white transition-colors ease-in group/link'
             >
               <CodeBracketIcon className='h-10 w-10 absolute grey--text group-hover/link:text-white transition-colors ease-in div--center cursor-pointer' />
-            </Link>
-            <Link
-              href={webUrl}
-              rel='noopener noreferrer'
-              target='_blank'
+            </LinkWrapper>
+            <LinkWrapper
+              webUrl={webUrl}
               className='h-14 w-14 relative border-2 grey--border rounded-xl hover:border-white transition-colors ease-in group/link ml-2'
             >
               <ArrowTopRightOnSquareIcon className='h-10 w-10 absolute grey--text group-hover/link:text-white transition-colors ease-in div--center cursor-pointer' />
-            </Link>
+            </LinkWrapper>
           </div>
         </div>
       </div>
