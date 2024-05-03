@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 
 const CodeButton = ({ name, img, active, selectCode, disabled }) => {
-  const buttonShadowColor = active ? "primary" : "secondary"
   return (
     <button onClick={selectCode} disabled={disabled}>
       <div className={`relative w-20 h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 rounded-xl bg-[var(--light-color)] div--hover--button hover--text--transition--color`}>

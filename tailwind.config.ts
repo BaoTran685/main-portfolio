@@ -15,10 +15,6 @@ const config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      screens: {
-        'mx': '850px',
-        '3xl': '1800px'
-      }
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],

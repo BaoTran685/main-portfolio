@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useLayoutEffect, useRef } from 'react'
+import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,8 +13,8 @@ import TabContent from './TabContent'
 
 const aboutComponents = [
   {
-    tab: 'language',
-    tabName: 'Languages',
+    tab: 'skill',
+    tabName: 'Skills',
     list: [
       {
         title: 'NodeJS, NextJS, React, Tailwind Css',
@@ -39,8 +39,8 @@ const aboutComponents = [
     ]
   },
   {
-    tab: 'education',
-    tabName: 'Education',
+    tab: 'degree',
+    tabName: 'Degrees',
     list: [
       {
         title: 'High School Diploma',
@@ -58,38 +58,62 @@ const aboutComponents = [
         link: ''
       }
     ]
+  },
+  {
+    tab: 'award',
+    tabName: 'Awards',
+    list: [
+      {
+        title: 'Euclid Contest Certificate of Distinction',
+        at: '',
+        link: ''
+      },
+      {
+        title:
+          'Canadian Computing Competition (Senior) Certificate of Distinction',
+        at: '',
+        link: ''
+      },
+      {
+        title: 'Fermat Contest Certificate of Distinction',
+        at: '',
+        link: ''
+      }
+    ]
   }
-
-  // {
-  //   tab: 'certification',
-  //   tabName: 'Certification',
-  //   list: [
-  //     {
-  //       title: 'Euclid Contest Certificate of Distinction',
-  //       at: '',
-  //       link: ''
-  //     },
-  //     {
-  //       title:
-  //         'Canadian Computing Competition (Senior) Certificate of Distinction',
-  //       at: '',
-  //       link: ''
-  //     },
-  //     {
-  //       title: 'Fermat Contest Certificate of Distinction',
-  //       at: '',
-  //       link: ''
-  //     }
-  //   ]
-  // }
 ]
 
 const AboutSection = () => {
-  const [curTab, setCurTab] = useState('language')
-
+  const [curTab, setCurTab] = useState('skill')
   const handleTabChange = newTab => {
     setCurTab(newTab)
+    handleDimensionChange()
   }
+
+  const targetRef = useRef()
+  const [minHeight, setMinHeight] = useState(0)
+  let movementTimer = null
+  const TIME = 100
+  const handleDimensionChange = () => {
+    if (targetRef.current) {
+      const curHeight = targetRef.current.offsetHeight
+      if (curHeight > minHeight) {
+        setMinHeight(curHeight)
+      }
+    }
+  }
+  const handleDelayChange = () => {
+    setMinHeight(0)
+    clearInterval(movementTimer)
+    movementTimer = setTimeout(handleDimensionChange, TIME)
+  }
+  useLayoutEffect(() => {
+    handleDelayChange()
+  }, [])
+  useEffect(() => {
+    window.addEventListener('resize', handleDelayChange)
+    return () => window.removeEventListener('resize', handleDelayChange)
+  })
 
   return (
     <section className='' id='about'>
@@ -109,7 +133,11 @@ const AboutSection = () => {
         </div>
         <div className='flex flex-col md:grid md:grid-cols-12 gap-5 md:gap-6'>
           <div className='col-span-6 block w-full h-fit bg-[#e7e7e76b] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
-            <div className='flex flex-col items-center justify-center text-center'>
+            <div
+              ref={targetRef}
+              style={{minHeight: minHeight}}
+              className='flex flex-col items-center justify-start text-center'
+            >
               <div className='flex flex-row justify-center w-fit h-fit bg-[white] rounded-full'>
                 {aboutComponents.map((component, index) => (
                   <TabContent
@@ -124,8 +152,8 @@ const AboutSection = () => {
               {aboutComponents.map((component, index) => (
                 <ul
                   key={index}
-                  className={`list-disc mt-3 lg:mt-6 ${
-                    component.tab === curTab ? 'fade' : 'hidden'
+                  className={`list-disc mt-5 ${
+                    component.tab === curTab ? '' : 'hidden'
                   }`}
                 >
                   {component.list.map(
@@ -151,7 +179,7 @@ const AboutSection = () => {
               ))}
             </div>
           </div>
-          <div className='col-span-6 flex flex-col items-center justify-center w-full h-full bg-[#e7e7e76b] rounded-3xl shadow-xl p-4'>
+          <div className='col-span-6 flex flex-col items-center justify-center w-full h-auto bg-[#e7e7e76b] rounded-3xl shadow-xl p-4'>
             <Image
               src='/images/new-signature.png'
               alt='signature'

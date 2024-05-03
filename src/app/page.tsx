@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import AboutSection from "./components/About/AboutSection";
 import ExperienceSection from "./components/Experience/ExperienceSection";
 import ProjectsSection from "./components/Project/ProjectsSection";
+import EmailSection from "./components/Email/EmailSection"
 
 import Footer from "./components/Footer";
 
@@ -16,7 +17,7 @@ export default function Home() {
           <AboutSection />
           <ExperienceSection />
           <ProjectsSection />
-          {/* <EmailSection /> */}
+          <EmailSection />
         </div>
       </div>
       <Footer />

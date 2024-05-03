@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const TabExperience = ({ title, at, link, start, end }) => {
+const ExperienceCard = ({ title, at, link, start, end }) => {
   return (
     <div className='w-full bg-[#e7e7e76b] border-l-8 border-[#F27121] rounded-xl shadow-lg px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
       <div className='text--content'>
@@ -9,9 +9,9 @@ const TabExperience = ({ title, at, link, start, end }) => {
           @{at}
         </Link>
       </div>
-      {start} - {end}
+      <p className='text-[var(--grey-color-1)]'>{start} - {end}</p>
     </div>
   )
 }
 
-export default TabExperience
+export default ExperienceCard

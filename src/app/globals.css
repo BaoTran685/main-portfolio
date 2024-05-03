@@ -35,7 +35,7 @@
 
 @layer components {
   .text--main--header {
-    @apply text-5xl lg:text-6xl 3xl:text-7xl font-extrabold;
+    @apply text-5xl lg:text-6xl font-extrabold;
   }
   .text--header {
     @apply text-[#45474B] text-4xl lg:text-5xl font-extrabold;
@@ -50,7 +50,7 @@
 
   
   .text--nav--header {
-    @apply text-base sm:text-lg lg:text-xl 3xl:text-2xl text-[var(--grey-color-1)] hover--text--transition--color;
+    @apply text-base sm:text-lg lg:text-xl text-[var(--grey-color-1)] hover--text--transition--color;
   }
   .icon--nav--button {
     @apply flex items-center px-3 py-2 text-[var(--grey-color-1)] hover--text--transition--color;
@@ -63,13 +63,13 @@
   }
 
   .text--number {
-    @apply text-white text-3xl sm:text-4xl lg:text-5xl 3xl:text-6xl;
+    @apply text-white text-3xl sm:text-4xl lg:text-5xl;
   }
   .text--content {
-    @apply text-base sm:text-lg lg:text-xl 3xl:text-2xl;
+    @apply text-base sm:text-lg lg:text-xl;
   }
   .text--sub--header {
-    @apply text-lg sm:text-xl lg:text-2xl xl:text-2xl 3xl:text-3xl;
+    @apply text-lg sm:text-xl lg:text-2xl xl:text-2xl;
   }
   .div--center {
     @apply top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
@@ -82,13 +82,13 @@
     @apply hover:scale-110 transition-transform ease-in duration-300;
   }
   .button--background--dark {
-    background-color: #F27121;
+    @apply bg-[#F27121];
   }
   .button--background--light {
     @apply bg-gradient-to-br from-[var(--button--purple-color)] to-[var(--button--pink-color)]
   }
   .div--hover--button {
-    @apply block rounded-full hover:bg-gradient-to-br  px-6 py-3;
+    @apply block rounded-full hover:bg-gradient-to-br px-6 py-3;
   }
 
   .box--shadow {

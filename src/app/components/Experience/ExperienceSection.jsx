@@ -1,9 +1,5 @@
-'use client'
-import React, { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
 import SubHeader from '../SubHeader'
-
-import TabExperience from './TabExperience'
+import ExperienceCard from './ExperienceCard'
 import CircleSection from '../CircleSection'
 
 const experienceComponents = [
@@ -23,9 +19,6 @@ const experienceComponents = [
   }
 ]
 const Experience = () => {
-  const ref = useRef(null)
-
-
   return (
     <section className='mt-10 xl:mt-12' id='experience'>
       <div className='flex flex-col'>
@@ -34,10 +27,8 @@ const Experience = () => {
         </div>
         <ul className='grid gap-5 md:gap-6'>
           {experienceComponents.map((component, index) => (
-            <li
-              key={index}
-            >
-              <TabExperience
+            <li key={index}>
+              <ExperienceCard
                 title={component.title}
                 at={component.at}
                 link={component.link}
