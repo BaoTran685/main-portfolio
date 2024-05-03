@@ -6,14 +6,14 @@ const experienceComponents = [
   {
     title: 'Volunteerer',
     at: 'Colonel Gray High School Library',
-    link: '',
+    link: 'https://colonelgray.edu.pe.ca/',
     start: 'September 2020',
     end: 'January 2021'
   },
   {
     title: 'Crew Member',
     at: "Wendy's",
-    link: '',
+    link: 'https://locations.wendys.com/canada/pe/charlottetown/643-university-avenue',
     start: 'January 2023',
     end: 'May 2023'
   }

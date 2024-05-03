@@ -45,12 +45,12 @@ const aboutComponents = [
       {
         title: 'High School Diploma',
         at: 'Colonel Gray Senior High',
-        link: ''
+        link: 'https://colonelgray.edu.pe.ca/'
       },
       {
         title: 'Bachelor of Mathematics',
         at: 'University of Waterloo',
-        link: ''
+        link: 'https://uwaterloo.ca/'
       },
       {
         title: 'Exam P',
