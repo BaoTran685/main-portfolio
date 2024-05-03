@@ -33,7 +33,7 @@ const ProjectsCard = ({ imgUrl, title, description, gitUrl, webUrl }) => {
           </div>
         </div>
       </div>
-      <div className='text-white rounded-b-xl bg-[var(--blue-color)] p-4'>
+      <div className='text-white rounded-b-xl bg-[var(--blue-color)] shadow-xl p-4'>
         <h5 className='text-xl font-semibold'>{title}</h5>
         <p>{description}</p>
       </div>
