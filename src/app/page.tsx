@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-[var(--background--first-white)] scroll-smooth">
+    <main className="flex flex-col min-h-screen bg-[var(--background-white-color)] scroll-smooth">
       <NavBar />
       <div className="container mx-auto">
         <div className="mx-6 md:mx-8 xl:mx-14">

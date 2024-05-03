@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import NavLink from './NavLink'
-import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/16/solid'
+import { ArrowDownIcon } from '@heroicons/react/16/solid'
 import { motion } from 'framer-motion'
 
 const navLinks = [
@@ -32,7 +32,7 @@ const NavBar = () => {
   return (
     <>
       <nav className='flex flex-row items-center justify-center fixed top-0 left-0 right-0 z-10'>
-        <div className='bg-[#fcfcfc] min-w-[150px] shadow-md rounded-3xl mt-6 px-10 md:px-20 lg:px-40 py-4 md:py-6 lg:py-8'>
+        <div className='nav--background min-w-[150px] shadow-md rounded-3xl mt-6 px-10 md:px-20 lg:px-40 py-4 md:py-6 lg:py-8'>
           <div className='block'>
             <ul className='menu hidden sm:flex flex-row space-x-4 md:space-x-6 lg:space-x-8'>
               {navLinks.map((link, index) => (

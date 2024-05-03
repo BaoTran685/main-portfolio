@@ -1,9 +1,8 @@
 
 
 
-
 const TabContent = ({active, selectTab, children }) => {
-  const activeButton = active ? 'text-[white] bg-[#F27121]' : 'text-[#45474B] bg-[white]'
+  const activeButton = active ? 'text-[white] bg-[var(--orange-color)]' : 'text-[var(--grey-color)] bg-[white]'
   return (
     <button onClick={selectTab} className={`${activeButton} rounded-full px-5 py-2.5 md:px-4 md:py-2 lg:px-6 lg:py-3`}>
       <span

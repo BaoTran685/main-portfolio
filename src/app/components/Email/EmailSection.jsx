@@ -30,7 +30,7 @@ const EmailSection = () => {
   }
   return (
     <section className='mt-10 xl:mt-12' id='contact'>
-      <div className='h-full w-full bg-[#e7e7e76b] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
+      <div className='h-full w-full bg-[var(--box-grey-color)] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
         <div className='flex flex-col items-center md:items-start text-center md:text-left'>
           <SubHeader>Let&apos;s Connect</SubHeader>
         </div>
@@ -56,7 +56,7 @@ const EmailSection = () => {
             />
             <button
               type='submit'
-              className='w-full rounded-lg bg-[#F27121] text-white hover--scale--transition--button'
+              className='w-full rounded-lg bg-[var(--orange-color)] text-white hover--scale--transition--button'
             >
               <span className='block rounded-full px-6 py-3'>Send Message</span>
             </button>

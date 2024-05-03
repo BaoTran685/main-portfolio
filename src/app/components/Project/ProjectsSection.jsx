@@ -33,7 +33,7 @@ const ProjectsSession = () => {
   return (
     <section className='mt-10 xl:mt-12' id='project'>
       <div className='flex flex-col'>
-        <div className='flex flex-col h-full items-center md:items-start text-center md:text-left w-full bg-[#e7e7e76b] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
+        <div className='flex flex-col h-full items-center md:items-start text-center md:text-left w-full bg-[var(--box-grey-color)] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
           <SubHeader> My Projects </SubHeader>
         </div>
       </div>

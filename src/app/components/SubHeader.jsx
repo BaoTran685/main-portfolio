@@ -36,13 +36,13 @@ const SubHeader = ({ children }) => {
     <>
       <h2
         ref={targetRef}
-        className='text--header text-transparent bg-clip-text header--background--dark'
+        className='text--header text-transparent bg-clip-text header--background'
       >
         {children}
       </h2>
       <div
         style={dimension}
-        className='w-fit h-1 bg-[#E94057] rounded-md mt-0.5 md:mt-1'
+        className='w-fit h-1 bg-[var(--red-color)] rounded-md mt-0.5 md:mt-1'
       />
     </>
   )

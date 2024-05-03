@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grey--background {
+    @apply bg-[#bebdbd6b];
+  }
+  .grey--border {
+    @apply border-[#636b70];
+  }
+  .grey--text {
+    @apply text-[#636b70];
+  }
+  .slight--blue--background {
+    @apply bg-[#ceebf3];
+  }
+  
+}
