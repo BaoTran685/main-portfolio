@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import "./components/Hero/hero.css";
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={popings.className}>{children}</body>
+      <body className={popings.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
