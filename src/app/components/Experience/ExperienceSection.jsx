@@ -1,6 +1,6 @@
 import SubHeader from '../SubHeader'
 import ExperienceCard from './ExperienceCard'
-import CircleSection from '../CircleSection'
+import CircleSection from '../CircleSeperator'
 
 const experienceComponents = [
   {
@@ -20,7 +20,7 @@ const experienceComponents = [
 ]
 const Experience = () => {
   return (
-    <section className='mt-10 xl:mt-12' id='experience'>
+    <section className='mt-10 xl:mt-12' id='Experience'>
       <div className='flex flex-col'>
         <div className='flex flex-col h-full items-center md:items-start text-center md:text-left w-full bg-[var(--box-grey-color)] rounded-xl shadow-lg mb-5 md:mb-6 px-8 md:px-10 lg:px-14 xl:px-18 py-8'>
           <SubHeader> Experience </SubHeader>

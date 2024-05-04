@@ -3,7 +3,7 @@ import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 import Image from 'next/image'
 
 import SubHeader from '../SubHeader'
-import CircleSection from '../CircleSection'
+import CircleSeperator from '../CircleSeperator'
 import TabContent from './TabContent'
 import LinkWrapper from '../LinkWrapper'
 
@@ -117,7 +117,7 @@ const AboutSection = () => {
   })
 
   return (
-    <section className='' id='about'>
+    <section className='' id='About'>
       <div className='flex flex-col space-y-5 md:space-y-6'>
         <div className='flex justify-center w-full h-full bg-[var(--box-grey-color)] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
           <div className='flex flex-col h-full items-center md:items-start text-center md:text-left'>
@@ -191,7 +191,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <CircleSection circleNumber={5} />
+      <CircleSeperator />
     </section>
   )
 }

@@ -27,7 +27,7 @@
     @apply text-base sm:text-lg lg:text-xl;
   }
   .text--nav--header {
-    @apply text-base sm:text-lg lg:text-xl text-[#45474B] hover--text--transition--color;
+    @apply text-base sm:text-lg lg:text-xl hover--text--transition--color;
   }
 
 
