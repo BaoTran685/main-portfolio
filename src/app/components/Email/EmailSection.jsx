@@ -48,12 +48,23 @@ const EmailSection = () => {
               type='text'
               placeholder='Say Something'
             />
-            <InputBox
-              label='Message'
-              name='message'
-              type='message'
-              placeholder='Say Hello to Me'
-            />
+            <div className='mb-6'>
+              <label
+                htmlFor='Message'
+                type='message'
+                className='text-black block mb-2 text-sm font-medium'
+              >
+                Message
+              </label>
+              <textarea
+                name='Message'
+                id='Message'
+                type='message'
+                className='text-sm text-black rounded-lg block w-full bg-[var(--background-white-color)] resize-none border border-transparent focus:outline-none focus:ring-2 focus:ring-[#33353F] placeholder-[#9CA2A9] p-2.5 appearance-none'
+                required
+                placeholder='Say Hello to Me...'
+              />
+            </div>
             <button
               type='submit'
               className='w-full rounded-lg bg-[var(--orange-color)] text-white hover--scale--transition--button hover:scale-105'
