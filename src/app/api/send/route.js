@@ -16,7 +16,6 @@ export async function POST (req, res) {
   let current_date = format(new Date(), 'MMMM do yyyy, h:mm:ss a');
   
   if (ret) {
-    console.log(ret)
     ret.data.push({subject: personal_subject, message: personal_message, time: current_date})
     await redis.set(personal_email, ret)
   } else {

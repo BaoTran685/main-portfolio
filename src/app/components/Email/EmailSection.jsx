@@ -50,15 +50,15 @@ const EmailSection = () => {
             />
             <div className='mb-6'>
               <label
-                htmlFor='Message'
+                htmlFor='message'
                 type='message'
                 className='text-black block mb-2 text-sm font-medium'
               >
                 Message
               </label>
               <textarea
-                name='Message'
-                id='Message'
+                name='message'
+                id='message'
                 type='message'
                 className='text-sm text-black rounded-lg block w-full bg-[var(--background-white-color)] resize-none border border-transparent focus:outline-none focus:ring-2 focus:ring-[#33353F] placeholder-[#9CA2A9] p-2.5 appearance-none'
                 required
