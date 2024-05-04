@@ -32,7 +32,7 @@ const NavBar = () => {
 
   // when the section is in viewport and it is more than half of the screen, show it
   let movementTimer = null
-  const TIME = 40
+  const TIME = 15
   const handleScroll = () => {
     const sections = document.querySelectorAll('section')
     const scrollPosition = window.scrollY
