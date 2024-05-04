@@ -56,7 +56,7 @@ const EmailSection = () => {
             />
             <button
               type='submit'
-              className='w-full rounded-lg bg-[var(--orange-color)] text-white hover--scale--transition--button'
+              className='w-full rounded-lg bg-[var(--orange-color)] text-white hover--scale--transition--button hover:scale-105'
             >
               <span className='block rounded-full px-6 py-3'>Send Message</span>
             </button>
