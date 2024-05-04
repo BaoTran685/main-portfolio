@@ -9,6 +9,11 @@ import HeroButton from './HeroButton'
 // when screen >= md, animated text and picture are aligned horizontally
 // when screen < md, animated text and picture are aliend vertically
 const HeroSection = () => {
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('Contact')
+    contactSection.scrollIntoView()
+  }
   return (
     <section className='flex flex-col items-center justify-center mt-28 md:mt-32 lg:mt-40' id='Home'>
       <div className='flex flex-col md:flex-row justify-around w-full h-full bg-[var(--box-grey-color)] shadow-xl rounded-3xl p-10 lg:p-16 xl:p-20'>
@@ -39,7 +44,7 @@ const HeroSection = () => {
             not how long, but how well you have lived is the main thing
           </p>
           <div className='text-base sm:text-md lg:text-lg mt-3 sm:mt-6 md:mt-12'>
-            <HeroButton content='Connect' />
+            <HeroButton content='Connect' onClick={() => scrollToContact()}/>
             <HeroButton content='Download CV' />
           </div>
         </div>
