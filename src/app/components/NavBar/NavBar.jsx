@@ -75,7 +75,7 @@ const NavBar = () => {
               animate={navbarOpen ? 'open' : 'closed'}
               className='flex flex-col items-center justify-center'
             >
-              <motion.button
+              <motion.div
                 whileTap={{ scale: 0.97 }}
                 onClick={() => {
                   setNavbarOpen(!navbarOpen)
@@ -91,7 +91,7 @@ const NavBar = () => {
                 >
                   <ArrowDownIcon className='w-7 h-7' />
                 </motion.div>
-              </motion.button>
+              </motion.div>
             </motion.div>
 
             <div className='mobile-menu-open flex sm:hidden'>

@@ -11,6 +11,7 @@
   --red-color: #E94057;
   --orange-color: #F27121;
   --blue-color: #54b3d6;
+  --dark-blue-color: #4491af;
 }
 
 @layer components {
@@ -84,7 +85,7 @@
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #54b3d6;
+    background-color: var(--blue-color);
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
