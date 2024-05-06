@@ -32,7 +32,7 @@ const NavBar = () => {
 
   // when the section is in viewport and it is more than half of the screen, show it
   let movementTimer = null
-  const TIME = 15
+  const TIME = 130
   const handleScroll = () => {
     const sections = document.querySelectorAll('section')
     const scrollPosition = window.scrollY
@@ -60,7 +60,7 @@ const NavBar = () => {
         <div className='block'>
           <ul className='menu hidden sm:flex flex-row space-x-4 md:space-x-6 lg:space-x-8'>
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li key={index} onClick={() => {setActiveSection(link.name)}}>
                 <NavLink
                   name={link.name}
                   href={link.href}
