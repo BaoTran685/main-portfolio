@@ -8,8 +8,8 @@ import LinkWrapper from '../LinkWrapper'
 
 const ProjectsCard = ({ imgUrl, title, description, gitUrl, webUrl }) => {
   return (
-    <div>
-      <div className='grey--background rounded-t-xl shadow-xl relative group pt-3 px-3'>
+    <div className='shadow-xl rounded-xl'>
+      <div className='grey--background rounded-t-xl relative group pt-3 px-3'>
         <div
           className='h-52 md:h-72 rounded-t-2xl'
           style={{ background: `url(${imgUrl})`, backgroundSize: 'cover' }}
@@ -30,7 +30,7 @@ const ProjectsCard = ({ imgUrl, title, description, gitUrl, webUrl }) => {
           </div>
         </div>
       </div>
-      <div className='text-white rounded-b-xl bg-[var(--blue-color)] shadow-xl p-4'>
+      <div className='text-white rounded-b-xl bg-[var(--light-blue-color)] p-4'>
         <h5 className='text-xl font-semibold'>{title}</h5>
         <p>{description}</p>
       </div>
@@ -39,4 +39,3 @@ const ProjectsCard = ({ imgUrl, title, description, gitUrl, webUrl }) => {
 }
 
 export default ProjectsCard
-

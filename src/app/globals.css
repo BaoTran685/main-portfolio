@@ -9,8 +9,10 @@
   --grey-color: #45474B;
   --purple-color: #8A2387;
   --red-color: #E94057;
-  --orange-color: #F27121;
-  --blue-color: #54b3d6;
+  --light-orange-color: #F27121;
+  --orange-color: #D25600;
+  --blue-color: #00A6ED;
+  --light-blue-color: #54b3d6;
   --dark-blue-color: #4491af;
 }
 
@@ -85,10 +87,10 @@
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: var(--blue-color);
+    background-color: var(--light-blue-color);
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #4491af;
+    background-color: var(--dark-blue-color);
   }
 }
