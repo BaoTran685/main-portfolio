@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
+import { motion } from 'framer-motion'
 
 import HeroButton from './HeroButton'
 
@@ -47,7 +48,12 @@ const HeroSection = () => {
             <HeroButton content='Download CV' />
           </div>
         </div>
-        <div className='place-self-center mt-3 sm:mt-6 md:mt-0 md:ml-4'>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+          className='place-self-center mt-3 sm:mt-6 md:mt-0 md:ml-4'
+        >
           <div className='rounded-full w-[275px] h-[275px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] relative'>
             <Image
               src='/images/random.jpg'
@@ -58,7 +64,7 @@ const HeroSection = () => {
               priority
             ></Image>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className='flex flex-col items-center justify-center my-10 lg:my-12'>
         <div className='scroll-down' />
