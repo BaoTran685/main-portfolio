@@ -18,7 +18,7 @@
     @apply text-5xl lg:text-6xl font-extrabold;
   }
   .text--header {
-    @apply text-[#45474B] text-4xl lg:text-5xl font-extrabold;
+    @apply text-[var(--grey-color)] text-4xl lg:text-5xl font-extrabold;
   }
   .text--sub--header {
     @apply text-lg sm:text-xl lg:text-2xl xl:text-2xl;
@@ -32,7 +32,7 @@
 
 
   .header--background {
-    @apply bg-gradient-to-br from-[#8A2387] via-[#E94057] to-[#F27121];
+    @apply bg-gradient-to-br from-[var(--purple-color)] via-[var(--red-color)] to-[var(--orange-color)];
   }
   .nav--background {
     @apply bg-[#fcfcfc];
@@ -45,7 +45,7 @@
 
 
   .hover--text--transition--color {
-    @apply hover:text-[#F27121] transition-colors duration-500;
+    @apply hover:text-[var(--orange-color)] transition-colors duration-500;
   }
   .hover--scale--transition--button {
     @apply hover:scale-110 transition-transform ease-in duration-300;
