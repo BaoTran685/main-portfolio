@@ -62,6 +62,7 @@ const HeroSection = () => {
               width={300}
               height={300}
               priority
+              rel="preload"
             ></Image>
           </div>
         </motion.div>
