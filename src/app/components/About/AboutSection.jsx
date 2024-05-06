@@ -182,7 +182,7 @@ const AboutSection = () => {
           </div>
           <div className='col-span-6 flex flex-col items-center justify-center w-full h-auto bg-[var(--box-grey-color)] rounded-3xl shadow-xl p-4'>
             <Image
-              src='/images/new-signature.png'
+              src='/images/waterloo.png'
               alt='signature'
               className='w-fit h-fit'
               width={350}
