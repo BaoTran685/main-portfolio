@@ -55,6 +55,7 @@ const HeroSection = () => {
               className='rounded-full absolute div--center w-fit h-fit'
               width={300}
               height={300}
+              priority
             ></Image>
           </div>
         </div>
