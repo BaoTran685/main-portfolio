@@ -132,8 +132,8 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col md:grid md:grid-cols-12 gap-5 md:gap-6'>
-          <div className='col-span-6 block w-full h-fit bg-[var(--box-grey-color)] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
+        <div className='flex flex-col md:grid md:grid-cols-2 gap-5 md:gap-6'>
+          <div className='block w-full h-fit bg-[var(--box-grey-color)] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
             <div
               ref={targetRef}
               style={{ minHeight: minHeight }}
@@ -180,7 +180,7 @@ const AboutSection = () => {
               ))}
             </div>
           </div>
-          <div className='col-span-6 flex flex-col items-center justify-center w-full h-auto bg-[var(--box-grey-color)] rounded-3xl shadow-xl p-4'>
+          <div className='flex flex-col items-center justify-center w-full h-auto bg-[var(--box-grey-color)] rounded-3xl shadow-xl p-4'>
             <Image
               src='/images/waterloo.png'
               alt='signature'
