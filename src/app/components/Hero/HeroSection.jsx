@@ -41,7 +41,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className='text-[var(--grey-color)] text-base sm:text-lg lg:text-xl 3xl:text-2xl mb-8'>
-            not how long, but how well you have lived is the main thing
+            Not how long, but how well you have lived is the main thing
           </p>
           <div className='text-base sm:text-md lg:text-lg mt-3 sm:mt-6 md:mt-12'>
             <HeroButton content='Connect' onClick={() => scrollToContact()} />

@@ -11,7 +11,7 @@ const experienceComponents = [
     end: 'May 2023'
   },
   {
-    title: 'Volunteerer',
+    title: 'Volunteer',
     at: 'Colonel Gray High School Library',
     link: 'https://colonelgray.edu.pe.ca/',
     start: 'September 2020',
