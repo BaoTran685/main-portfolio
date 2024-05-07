@@ -6,10 +6,10 @@
   --background-white-color: #F5F7F8;
   --box-grey-color: #e7e7e76b;
 
-  --grey-color: #45474B;
-  --purple-color: #8A2387;
-  --red-color: #E94057;
-  --light-orange-color: #F27121;
+  --grey-color: #45474B; /* texts */
+  --purple-color: #8A2387; /* header */
+  --red-color: #E94057; /* header */
+  --light-orange-color: #F27121; /* header + navbar */ 
   --orange-color: #F27121; /* #D25600 */
   --blue-color: #54b3d6; /* #00A6ED */
   --light-blue-color: #54b3d6;
@@ -35,7 +35,7 @@
 
 
   .header--background {
-    @apply bg-gradient-to-br from-[var(--purple-color)] via-[var(--red-color)] to-[var(--orange-color)];
+    @apply bg-gradient-to-br from-[var(--purple-color)] via-[var(--red-color)] to-[var(--light-orange-color)];
   }
   .nav--background {
     @apply bg-[#fcfcfc];

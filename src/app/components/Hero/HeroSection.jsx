@@ -27,7 +27,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 'Bao',
-                1500,
+                1700,
                 'Waterloo Student',
                 1700,
                 'Data Scientist',
@@ -36,7 +36,7 @@ const HeroSection = () => {
                 1700
               ]}
               wrapper='span'
-              speed={30}
+              speed={20}
               repeat={Infinity}
             />
           </h1>
@@ -62,8 +62,7 @@ const HeroSection = () => {
               width={300}
               height={300}
               priority
-              rel="preload"
-            ></Image>
+            />
           </div>
         </motion.div>
       </div>
