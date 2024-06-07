@@ -16,10 +16,11 @@ const InputBox = ({ label, name, type, placeholder }) => {
         type={type}
         className='text-sm text-black rounded-lg block w-full bg-[var(--background-white-color)] border border-transparent focus:outline-none focus:ring-2 focus:ring-[#33353F] placeholder-[#9CA2A9] p-2.5 appearance-none'
         required
+        autoComplete="off"
         placeholder={placeholder}
       />
     </div>
   )
 }
 
-export default InputBox
+export default InputBox;
