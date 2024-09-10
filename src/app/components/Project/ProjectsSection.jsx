@@ -7,6 +7,20 @@ import CircleSeperator from '../CircleSeperator'
 
 const projectsList = [
   {
+    imgUrl: '/images/projects/sp500_stock_analysis_2.png',
+    title: 'S&P 500 Stock Analysis',
+    description: 'Stock Analysis Notebook',
+    gitUrl: 'https://github.com/BaoTran685/SP500_Analysis',
+    webUrl: 'https://www.kaggle.com/code/baotranquoc685/s-p500-stocks-analysis'
+  },
+  {
+    imgUrl: '/images/projects/mnist_neural_network.png',
+    title: 'MNIST Neural Network',
+    description: 'Predicting-Numbers Model',
+    gitUrl: 'https://github.com/BaoTran685/MNIST--Neural_Network',
+    webUrl: 'https://www.kaggle.com/code/baotranquoc685/mnist'
+  },
+  {
     imgUrl: '/images/projects/password_encrypter.png',
     title: 'Password Encrypter',
     description: 'Encrypt/Decrypt Passwords',
@@ -19,7 +33,8 @@ const projectsList = [
     description: 'My Personal Portfolio Website',
     gitUrl: 'https://github.com/BaoTran685/main-portfolio',
     webUrl: ''
-  }
+  },
+  
 ]
 const ProjectsSession = () => {
   return (

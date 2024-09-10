@@ -15,8 +15,8 @@ export default function Home() {
         <div className="mx-6 md:mx-8 xl:mx-14">
           <HeroSection />
           <AboutSection />
-          <ExperienceSection />
           <ProjectsSection />
+          <ExperienceSection />
           <EmailSection />
         </div>
       </div>
