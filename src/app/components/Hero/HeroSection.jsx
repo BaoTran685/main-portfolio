@@ -56,7 +56,7 @@ const HeroSection = () => {
         >
           <div className='rounded-full w-[275px] h-[275px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] relative'>
             <Image
-              src='/images/random.jpg'
+              src='/images/selfie_of_bao_linkedin.jpeg'
               alt='hero image'
               className='rounded-full absolute div--center w-fit h-fit'
               width={300}
