@@ -121,7 +121,7 @@ const AboutSection = () => {
       <div className='flex flex-col space-y-5 md:space-y-6'>
         <div className='flex justify-center w-full h-full bg-[var(--box-grey-color)] shadow-lg rounded-3xl p-8 md:p-10 lg:p-14 xl:p-18'>
           <div className='flex flex-col h-full items-center md:items-start text-center md:text-left'>
-            <SubHeader>Quoc Bao Tran </SubHeader>
+            <SubHeader>Bao Tran </SubHeader>
             <p className='text-[var(--grey-color)] text--content leading-relaxed mt-2 lg:mt-4'>
               I am Bao and I am from Prince Edward Island, Canada. I am
               currently studying <span className='font-bold'>Mathematics</span>{' '}
