@@ -21,11 +21,11 @@ const projectsList = [
     webUrl: 'https://www.kaggle.com/code/baotranquoc685/mnist'
   },
   {
-    imgUrl: '/images/projects/password_encrypter.png',
+    imgUrl: '/images/projects/new_password_encrypter.png',
     title: 'Password Encrypter',
     description: 'Encrypt/Decrypt Passwords',
     gitUrl: 'https://github.com/BaoTran685/password-encrypter',
-    webUrl: 'https://passwordencrypter.com/'
+    webUrl: 'https://password-encrypt.vercel.app/'
   },
   {
     imgUrl: '/images/projects/personal_portfolio.png',
