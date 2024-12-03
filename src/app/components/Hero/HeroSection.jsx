@@ -4,7 +4,9 @@ import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 
 import HeroButton from './HeroButton'
+import LinkWrapper from '../LinkWrapper'
 
+const resumeLink = "https://github.com/BaoTran685/main-portfolio/tree/main/cv/"
 // breakpoints:
 // when screen >= md, animated text and picture are aligned horizontally
 // when screen < md, animated text and picture are aliend vertically
@@ -45,7 +47,9 @@ const HeroSection = () => {
           </p>
           <div className='text-base sm:text-md lg:text-lg mt-3 sm:mt-6 md:mt-12'>
             <HeroButton content='Connect' onClick={() => scrollToContact()} />
-            <HeroButton content='Download CV' />
+            <LinkWrapper webUrl={resumeLink} className={""} >
+              <HeroButton content='View CV' />
+            </LinkWrapper>
           </div>
         </div>
         <motion.div
