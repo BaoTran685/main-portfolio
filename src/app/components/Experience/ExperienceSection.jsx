@@ -4,18 +4,32 @@ import CircleSection from '../CircleSeperator'
 
 const experienceComponents = [
   {
+    title: 'Data Engineer Co-op',
+    at: "Brookfield Corporation",
+    link: 'https://www.brookfield.com/',
+    start: 'September 2024',
+    end: 'April 2025 (8 months)'
+  },
+  {
+    title: 'Data Analyst Co-op',
+    at: "Greenhouse Juice",
+    link: 'https://www.greenhouse.ca/',
+    start: 'January 2024',
+    end: 'August 2024 (8 months)'
+  },
+  {
     title: 'Crew Member',
     at: "Wendy's",
     link: 'https://locations.wendys.com/canada/pe/charlottetown/643-university-avenue',
-    start: 'January 2023',
-    end: 'May 2023'
+    start: 'January 2022',
+    end: 'May 2022 (5 months)'
   },
   {
     title: 'Volunteer',
     at: 'Colonel Gray High School Library',
     link: 'https://colonelgray.edu.pe.ca/',
     start: 'September 2020',
-    end: 'January 2021'
+    end: 'January 2021 (5 months)'
   },
   
 ]
