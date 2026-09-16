@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import HeroButton from './HeroButton'
 import LinkWrapper from '../LinkWrapper'
 
-const resumeLink = "https://github.com/BaoTran685/main-portfolio/tree/main/cv/"
 // breakpoints:
 // when screen >= md, animated text and picture are aligned horizontally
 // when screen < md, animated text and picture are aliend vertically
@@ -32,9 +31,7 @@ const HeroSection = () => {
                 1700,
                 'Waterloo Student',
                 1700,
-                'Data Scientist',
-                1500,
-                'Web Developer',
+                'Software Engineer',
                 1700
               ]}
               wrapper='span'
@@ -42,14 +39,11 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className='text-[var(--grey-color)] text-base sm:text-lg lg:text-xl 3xl:text-2xl mb-8'>
+          <p className='italic text-[var(--grey-color)] text-base sm:text-lg lg:text-xl 3xl:text-2xl mb-8'>
             not how long, but how well you have lived is the main thing
           </p>
           <div className='text-base sm:text-md lg:text-lg mt-3 sm:mt-6 md:mt-12'>
             <HeroButton content='Connect' onClick={() => scrollToContact()} />
-            <LinkWrapper webUrl={resumeLink} className={""} >
-              <HeroButton content='View CV' />
-            </LinkWrapper>
           </div>
         </div>
         <motion.div

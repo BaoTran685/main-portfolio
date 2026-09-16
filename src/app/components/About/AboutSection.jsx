@@ -17,48 +17,43 @@ const aboutComponents = [
     tabName: 'Skills',
     list: [
       {
-        title: 'NodeJS, NextJS, React, Tailwind Css',
+        title: 'C++, C, Python, Typescript, JavaScript, SQL',
         at: '',
         link: ''
       },
       {
-        title: 'Prisma, MongoDB, MySQL, PostgreSQL',
+        title: 'Next.js, MySQL, SQL Server, Snowflake, Supabase, MongoDB',
         at: '',
         link: ''
       },
       {
-        title: 'HTML, CSS, Javascript, Typescript',
+        title: 'Linux, POSIX Sockets, REST APIs, AWS, Azure',
         at: '',
         link: ''
       },
       {
-        title: 'Python, C/C++, DrRacket',
-        at: '',
-        link: ''
-      }
-    ]
-  },
-  {
-    tab: 'degree',
-    tabName: 'Degrees',
-    list: [
-      {
-        title: 'High School Diploma',
-        at: 'Colonel Gray Senior High',
-        link: 'https://colonelgray.edu.pe.ca/'
-      },
-      {
-        title: 'Bachelor of Mathematics',
-        at: 'University of Waterloo',
-        link: 'https://uwaterloo.ca/'
-      },
-      {
-        title: 'Exam P',
+        title: 'Git, GitHub, Bash, SSH, Make, Valgrind',
         at: '',
         link: ''
       }
     ]
   },
+  // {
+  //   tab: 'degree',
+  //   tabName: 'Degrees',
+  //   list: [
+  //     {
+  //       title: 'High School Diploma',
+  //       at: 'Colonel Gray Senior High',
+  //       link: 'https://colonelgray.edu.pe.ca/'
+  //     },
+  //     {
+  //       title: 'Bachelor of Computer Science',
+  //       at: 'University of Waterloo',
+  //       link: 'https://uwaterloo.ca/'
+  //     }
+  //   ]
+  // },
   {
     tab: 'award',
     tabName: 'Awards',
@@ -70,12 +65,17 @@ const aboutComponents = [
       },
       {
         title:
-          'Canadian Computing Competition (Senior) Certificate of Distinction',
+          'CSMC Certificate of Distinction',
         at: '',
         link: ''
       },
       {
-        title: 'Fermat Contest Certificate of Distinction',
+        title: 'Fermat/Cayley Contest Certificate of Distinction',
+        at: '',
+        link: ''
+      },
+      {
+        title: 'CCC Certificate of Distinction',
         at: '',
         link: ''
       }
@@ -123,12 +123,10 @@ const AboutSection = () => {
           <div className='flex flex-col h-full items-center md:items-start text-center md:text-left'>
             <SubHeader>Bao Tran </SubHeader>
             <p className='text-[var(--grey-color)] text--content leading-relaxed mt-2 lg:mt-4'>
-              I am Bao and I am from Prince Edward Island, Canada. I am
-              currently studying <span className='font-bold'>Mathematics</span>{' '}
-              at the University of Waterloo, and I want to focus on{' '}
-              <span className='font-bold'>Data Science.</span> I have a great
-              passion for <span className='font-bold'>Web Development</span> and
-              am looking forward to any opportunities!
+              I&apos;m currently pursuing a Bachelor of Computer Science at the University of Waterloo, with a strong interest in software development and engineering.
+              I&apos;m particularly drawn to backend and systems programming, where I enjoy exploring topics such as multithreading, concurrency, computer networking, and performance.
+              I like building projects that help me understand how software works under the hood and designing systems that are efficient, reliable, and scalable.
+
             </p>
           </div>
         </div>

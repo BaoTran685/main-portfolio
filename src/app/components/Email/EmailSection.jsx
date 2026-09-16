@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import SubHeader from '../SubHeader'
 import InputBox from './InputBox'
@@ -9,24 +9,27 @@ const EmailSection = () => {
 
   const handleSubmit = async e => {
     e.preventDefault()
-    const data = {
-      personal_email: e.target.email.value,
-      personal_subject: e.target.subject.value,
-      personal_message: e.target.message.value
-    }
-    const endpoint = '/api/send/'
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    }
-    const response = await fetch(endpoint, options)
-    if (response.status === 200) {
-      setEmailSubmitted(true)
-      e.target.reset()
-    }
+    // const data = {
+    //   personal_email: e.target.email.value,
+    //   personal_subject: e.target.subject.value,
+    //   personal_message: e.target.message.value
+    // }
+    // const endpoint = '/api/send/'
+    // const options = {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(data)
+    // }
+    // const response = await fetch(endpoint, options)
+    // if (response.status === 200) {
+    //   setEmailSubmitted(true)
+    //   e.target.reset()
+    // }
+    setEmailSubmitted(false)
+    await new Promise((resolve) => setTimeout(resolve, 500))
+    setEmailSubmitted(true)
   }
   return (
     <section className='mt-10 xl:mt-12' id='Contact'>
@@ -39,8 +42,8 @@ const EmailSection = () => {
             <InputBox
               label='Your Email'
               name='email'
-              type='email'
-              placeholder='baotran05@gmail.com'
+              type='text'
+              placeholder='helloworld@gmail.com'
             />
             <InputBox
               label='Subject'
